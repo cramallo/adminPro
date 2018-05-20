@@ -1,0 +1,22 @@
+import { NgModule } from "@angular/core";
+import { HeaderComponent } from '../shared/header/header.component';
+import { ErrorComponent } from '../shared/error/error.component';
+import { SidebarComponent } from '../shared/sidebar/sidebar.component';
+import { BreadcrumsComponent } from '../shared/breadcrums/breadcrums.component';
+
+@NgModule({
+    declarations: [     
+        HeaderComponent,
+        SidebarComponent,    
+        BreadcrumsComponent,
+        ErrorComponent     
+    ],
+    exports: [
+        HeaderComponent,
+        SidebarComponent,    
+        BreadcrumsComponent,
+        ErrorComponent     
+    ],
+    providers: []
+  })
+  export class SharedModule { }
