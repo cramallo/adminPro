@@ -6,19 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./progress.component.css']
 })
 export class ProgressComponent implements OnInit {
-
-  progress:number=50;
+  
+  progress1:number=50;
+  progress2:number=30;
+  leyenda:string="hola";
 
   constructor() { }
 
   ngOnInit() {
   }
-
-  incrementar(){
-    this.progress+=10;
-  }
-  decrementar(){
-    this.progress-=10;
-  }
-
 }
